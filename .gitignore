@@ -1,12 +1,343 @@
-*.class
+package calculator;
+import javax.swing.JRadioButton;            //this is button group
+class ButtonGroup 
+{
+     void add(JRadioButton rbtn_add) 
+     {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
+package calculator;
+public class Clac extends javax.swing.JFrame         //design
+{
+       private void groupButton(){
+        ButtonGroup ob=new ButtonGroup();
+        
+        ob.add(btnAD); 
+        ob.add(btnSUBS);
+        ob.add(btnMLT);
+        ob.add(btnDIV);
+        
+    }
+    
+    public Clac() 
+    {
+        initComponents();
+    }
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
 
-# Package Files #
-*.jar
-*.war
-*.ear
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        jLabel1 = new javax.swing.JLabel();
+        btnAD = new javax.swing.JRadioButton();
+        btnSUBS = new javax.swing.JRadioButton();
+        btnMLT = new javax.swing.JRadioButton();
+        btnDIV = new javax.swing.JRadioButton();
+        txt1 = new javax.swing.JTextField();
+        txt2 = new javax.swing.JTextField();
+        calbtn1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        output = new javax.swing.JLabel();
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("lab project:143311013");
+        setBackground(new java.awt.Color(204, 255, 204));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        setForeground(new java.awt.Color(51, 51, 51));
+        setResizable(false);
+
+        jLabel1.setBackground(new java.awt.Color(153, 153, 255));
+        jLabel1.setFont(new java.awt.Font("JeffreyPrint JL", 3, 12)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Simple  java calculator ");
+        jLabel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        btnAD.setBackground(new java.awt.Color(153, 153, 255));
+        buttonGroup1.add(btnAD);
+        btnAD.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        btnAD.setForeground(new java.awt.Color(204, 0, 0));
+        btnAD.setText("+");
+        btnAD.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, null, new java.awt.Color(204, 204, 204), null, null));
+        btnAD.setBorderPainted(true);
+        btnAD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnADActionPerformed(evt);
+            }
+        });
+
+        btnSUBS.setBackground(new java.awt.Color(153, 153, 255));
+        buttonGroup1.add(btnSUBS);
+        btnSUBS.setFont(new java.awt.Font("Ubuntu", 1, 12)); // NOI18N
+        btnSUBS.setForeground(new java.awt.Color(190, 31, 60));
+        btnSUBS.setText("   -");
+        btnSUBS.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        btnSUBS.setBorderPainted(true);
+        btnSUBS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSUBSActionPerformed(evt);
+            }
+        });
+
+        btnMLT.setBackground(new java.awt.Color(153, 153, 255));
+        buttonGroup1.add(btnMLT);
+        btnMLT.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        btnMLT.setForeground(new java.awt.Color(255, 0, 0));
+        btnMLT.setText("*");
+        btnMLT.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, null, new java.awt.Color(204, 204, 204), null, null));
+        btnMLT.setBorderPainted(true);
+        btnMLT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMLTActionPerformed(evt);
+            }
+        });
+
+        btnDIV.setBackground(new java.awt.Color(153, 153, 255));
+        buttonGroup1.add(btnDIV);
+        btnDIV.setFont(new java.awt.Font("Ubuntu", 1, 12)); // NOI18N
+        btnDIV.setForeground(new java.awt.Color(229, 2, 36));
+        btnDIV.setText("/");
+        btnDIV.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, null, new java.awt.Color(204, 204, 204), null, null));
+        btnDIV.setBorderPainted(true);
+        btnDIV.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDIVActionPerformed(evt);
+            }
+        });
+
+        txt1.setBackground(new java.awt.Color(119, 218, 220));
+        txt1.setFont(new java.awt.Font("Lucida Console", 1, 24)); // NOI18N
+        txt1.setForeground(new java.awt.Color(255, 0, 51));
+        txt1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt1ActionPerformed(evt);
+            }
+        });
+
+        txt2.setBackground(new java.awt.Color(119, 218, 220));
+        txt2.setFont(new java.awt.Font("Lucida Console", 1, 24)); // NOI18N
+        txt2.setForeground(new java.awt.Color(255, 0, 51));
+        txt2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt2ActionPerformed(evt);
+            }
+        });
+
+        calbtn1.setBackground(new java.awt.Color(204, 255, 255));
+        calbtn1.setFont(new java.awt.Font("Book Antiqua", 1, 24)); // NOI18N
+        calbtn1.setText("=");
+        calbtn1.setToolTipText("Click to calculate the values");
+        calbtn1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        calbtn1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        calbtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calbtn1ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(86, 137, 137));
+        jLabel2.setText("      input value one");
+
+        jLabel3.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(86, 137, 137));
+        jLabel3.setText("    input value two");
+
+        output.setBackground(new java.awt.Color(119, 218, 220));
+        output.setFont(new java.awt.Font("Courier New", 1, 80)); // NOI18N
+        output.setForeground(new java.awt.Color(0, 153, 0));
+        output.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        output.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(51, 255, 0), new java.awt.Color(255, 153, 0), new java.awt.Color(153, 0, 255), new java.awt.Color(255, 51, 0)));
+        output.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        output.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                outputAncestorAdded(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 21, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnAD, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(output, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnMLT, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(45, 45, 45)
+                                .addComponent(btnDIV, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(24, 24, 24)
+                                .addComponent(btnSUBS, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(78, 78, 78)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txt1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE)
+                                .addComponent(txt2, javax.swing.GroupLayout.Alignment.TRAILING)))))
+                .addContainerGap(31, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(132, 132, 132)
+                .addComponent(calbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(9, 9, 9)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txt1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addComponent(txt2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(39, 39, 39)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSUBS)
+                    .addComponent(btnDIV)
+                    .addComponent(btnMLT)
+                    .addComponent(btnAD))
+                .addGap(18, 18, 18)
+                .addComponent(calbtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(output, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(32, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void btnADActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+    }                                     
+
+    private void btnDIVActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+    }                                      
+
+    private void btnMLTActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+    }                                      
+
+    private void txt1ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }                                    
+
+    private void calbtn1ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        double num1=Double.parseDouble(txt1.getText());
+        double num2=Double.parseDouble(txt2.getText());
+        String Result = null;
+        String radioText="";
+        
+        if (btnAD.isSelected())
+        {
+           double total=num1+num2;
+           Result =String.valueOf(total); 
+        }
+        
+        if (btnSUBS.isSelected())
+        {
+            double total=num1-num2;
+            Result =String.valueOf(total);
+        }
+        
+           if (btnMLT.isSelected())
+        {
+            double total=num1*num2;
+            Result =String.valueOf(total);
+        }
+           
+        if (btnDIV.isSelected())
+        {
+           if(num2==0) throw new ArithmeticException();
+            double total=num1/num2;
+            Result =String.valueOf(total);
+        }
+        
+        
+        output.setText(Result);
+    }                                       
+
+    private void txt2ActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }                                    
+
+    private void btnSUBSActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        // TODO add your handling code here:
+    }                                       
+
+    private void outputAncestorAdded(javax.swing.event.AncestorEvent evt) {                                     
+        // TODO add your handling code here:
+    }                                    
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Clac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Clac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Clac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Clac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Clac().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JRadioButton btnAD;
+    private javax.swing.JRadioButton btnDIV;
+    private javax.swing.JRadioButton btnMLT;
+    private javax.swing.JRadioButton btnSUBS;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton calbtn1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel output;
+    private javax.swing.JTextField txt1;
+    private javax.swing.JTextField txt2;
+    // End of variables declaration                   
+}
